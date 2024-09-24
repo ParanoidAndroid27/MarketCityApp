@@ -1,0 +1,103 @@
+/* Asegúrate de que el fondo cubra toda la aplicación */
+ion-app {
+  height: 100%;
+}
+
+ion-content {
+  --background: none;
+  background-image: url('/assets/icon/fondo_ap.jpg') !important;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+/* Estilos adicionales para mejorar la apariencia */
+ion-menu {
+  --width: 250px;
+}
+
+#main-content {
+  padding: 16px;
+}
+
+ion-card {
+  margin-bottom: 16px;
+  border-radius: 12px;
+  overflow: hidden;
+}
+
+ion-card-header {
+  background-color: #f4f4f4;
+}
+
+ion-card-title {
+  color: #333;
+  font-weight: bold;
+}
+
+ion-card-subtitle {
+  color: #666;
+  font-size: 0.875rem;
+}
+
+ion-toolbar {
+  --padding-start: 16px;
+  --padding-end: 16px;
+}
+
+ion-searchbar {
+  --padding-start: 8px;
+  --padding-end: 8px;
+}
+
+ion-list {
+  margin-bottom: 16px;
+}
+
+ion-item {
+  --padding-start: 16px;
+  --padding-end: 16px;
+}
+
+ion-badge {
+  margin-left: 8px;
+}
+
+ion-thumbnail {
+  width: 48px;
+  height: 48px;
+  object-fit: cover;
+}
+
+ion-label {
+  font-size: 0.875rem;
+  line-height: 1.25rem;
+}
+
+ion-content {
+  --background: transparent;
+}
+
+ion-toolbar {
+  --background: #fff;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+ion-searchbar {
+  --background: #f4f4f4;
+  --color: #333;
+}
+
+ion-button {
+  --background: #3880ff;
+  --color: #fff;
+  --border-radius: 25px;
+  --padding: 12px 24px;
+  --font-size: 16px;
+  --box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+
+  &:hover {
+    --background: #2a64f7;
+  }
+}

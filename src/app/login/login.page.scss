@@ -1,0 +1,116 @@
+/* Asegurar que el contenido ocupe toda la pantalla */
+ion-content {
+  --background: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  padding: 0;
+  margin: 0;
+}
+
+/* Ajustar el fondo de pantalla */
+.login-background {
+  background: url('/assets/icon/fondo_ap.jpg') no-repeat center center fixed;
+  background-size: cover;
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  z-index: -1;
+}
+
+/* Contenedor principal para centrar el card */
+.login-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+/* Card centrado en el contenedor */
+.login-card {
+  width: 90%;
+  max-width: 400px;
+  padding: 40px 20px;
+  background-color: #ffffff;
+  border-radius: 16px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  z-index: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* Estilos para los elementos dentro del card */
+.logo-container {
+  width: 100%;
+  margin-bottom: 40px;
+}
+
+.login-logo {
+  width: 120px;
+  height: auto;
+  margin: 0 auto;
+}
+
+.input-container {
+  width: 100%;
+  max-width: 300px;
+  margin: 0 auto;
+}
+
+.button-container {
+  width: 100%;
+  max-width: 300px;
+  margin-top: 32px;
+  margin-bottom: 0;
+}
+
+.custom-input {
+  --background: #fafafa;
+  --color: #333;
+  --padding-start: 16px;
+  --padding-end: 16px;
+  --padding-top: 12px;
+  --padding-bottom: 12px;
+  --border-radius: 8px;
+}
+
+.primary-button, .secondary-button {
+  --border-radius: 25px;
+  font-family: Arial, sans-serif;
+  font-weight: bold;
+  letter-spacing: 1px;
+  transition: all 0.3s ease;
+
+  &:active {
+    transform: translateY(2px);
+  }
+}
+
+.primary-button {
+  --background: #3880FF;
+  --color: white;
+  --padding: 12px 24px;
+  --font-size: 16px;
+  --box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+
+  &:hover {
+    --background: #2A64F7;
+  }
+}
+
+.secondary-button {
+  --background: #3880FF;
+  --color: rgb(255, 255, 255);
+  --padding: 12px 24px;
+  --font-size: 16px;
+  --border: 1px solid #DADADA;
+
+  &:hover {
+    --background: #331396;
+  }
+}

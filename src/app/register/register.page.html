@@ -1,0 +1,65 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-back-button defaultHref="/"></ion-back-button>
+    </ion-buttons>
+    <ion-title>Registro</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content class="ion-padding">
+  <form [formGroup]="registroForm" (ngSubmit)="onSubmit()">
+    
+    <!-- Campo nombre -->
+    <ion-item>
+      <ion-label position="floating">Nombre</ion-label>
+      <ion-input formControlName="nombre" required></ion-input>
+    </ion-item>
+
+    <!-- Campo apellidos -->
+    <ion-item>
+      <ion-label position="floating">Apellidos</ion-label>
+      <ion-input formControlName="apellidos" required></ion-input>
+    </ion-item>
+
+    <!-- Campo nombre de usuario -->
+    <ion-item>
+      <ion-label position="floating">Nombre de Usuario</ion-label>
+      <ion-input formControlName="nombreUsuario" required></ion-input>
+    </ion-item>
+
+    <!-- Campo correo electrónico -->
+    <ion-item>
+      <ion-label position="floating">Correo Electrónico</ion-label>
+      <ion-input formControlName="correo" type="email" required></ion-input>
+    </ion-item>
+
+    <!-- Campo contraseña -->
+    <ion-item>
+      <ion-label position="floating">Contraseña</ion-label>
+      <ion-input formControlName="contrasena" type="password" required></ion-input>
+    </ion-item>
+
+    <!-- Campo confirmar contraseña -->
+    <ion-item>
+      <ion-label position="floating">Confirmar Contraseña</ion-label>
+      <ion-input formControlName="confirmarContrasena" type="password" required></ion-input>
+    </ion-item>
+
+    <!-- Campo foto de perfil -->
+<ion-item>
+  <ion-label position="floating">Foto de Perfil</ion-label>
+  <input type="file" formControlName="fotoPerfil" accept="image/*" (change)="onFileSelected($event)">
+</ion-item>
+
+
+    <!-- Checkbox de términos y condiciones -->
+    <ion-item>
+      <ion-label>He leído y acepto los términos y condiciones</ion-label>
+      <ion-checkbox formControlName="aceptarTerminos"></ion-checkbox>
+    </ion-item>
+
+    <!-- Botón de registro -->
+    <ion-button expand="full" type="submit" [disabled]="!registroForm.valid">Registrar</ion-button>
+  </form>
+</ion-content>

@@ -1,0 +1,25 @@
+<ion-content>
+  <div class="login-background"></div>
+  
+  <div class="login-container">
+    <div class="login-card">
+      <div class="logo-container">
+        <img src="\assets\icon\LOGO_APP.jpg" class="login-logo" alt="Logo">
+      </div>
+
+      <div class="input-container">
+        <ion-item class="custom-input">
+          <ion-input placeholder="Usuario" type="text" [(ngModel)]="user"></ion-input>
+        </ion-item>
+        <ion-item class="custom-input">
+          <ion-input placeholder="Contraseña" type="password" [(ngModel)]="password"></ion-input>
+        </ion-item>
+      </div>
+
+      <div class="button-container">
+        <ion-button expand="block" class="primary-button" (click)="onLoginButtonPressed()">Login</ion-button>
+        <ion-button expand="block" class="secondary-button" (click)="onRegisterButtonPressed()">Register</ion-button>
+      </div>
+    </div>
+  </div>
+</ion-content>
