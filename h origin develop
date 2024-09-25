@@ -1,0 +1,24 @@
+[33mcommit 98f7e6c4695332eee078b1aeafd9679ba8e26bd6[m[33m ([m[1;36mHEAD[m[33m -> [m[1;32mdevelop[m[33m, [m[1;31morigin/develop[m[33m)[m
+Author: ParanoidAndroid27 <kal.diaz@duocuc.cl>
+Date:   Wed Sep 25 00:34:05 2024 -0300
+
+    Login2, Register2, Home2
+
+[33mcommit df024c4d06b9fdc340ba13201c3ed3c87d347844[m[33m ([m[1;31morigin/master[m[33m, [m[1;32mmaster[m[33m)[m
+Merge: 3f21f92 000e6c9
+Author: ParanoidAndroid27 <kal.diaz@duocuc.cl>
+Date:   Mon Sep 23 23:17:52 2024 -0300
+
+    Merge branch 'master' of https://github.com/ParanoidAndroid27/MarketCityApp
+
+[33mcommit 3f21f92c768cd60e3c729056392573cebdfa2cf4[m
+Author: ParanoidAndroid27 <kal.diaz@duocuc.cl>
+Date:   Mon Sep 23 23:14:23 2024 -0300
+
+    Login, Register, Home
+
+[33mcommit 000e6c9a545508232ef674173cc9903e833c0665[m
+Author: ParanoidAndroid27 <163856045+ParanoidAndroid27@users.noreply.github.com>
+Date:   Mon Sep 23 23:09:19 2024 -0300
+
+    Initial commit
