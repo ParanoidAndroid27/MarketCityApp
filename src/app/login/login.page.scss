@@ -1,4 +1,4 @@
-/* Asegurar que el contenido ocupe toda la pantalla */
+/*  pantalla completa */
 ion-content {
   --background: none;
   display: flex;
@@ -9,9 +9,9 @@ ion-content {
   margin: 0;
 }
 
-/* Ajustar el fondo de pantalla */
+/* fondo de pantalla */
 .login-background {
-  background: url('/assets/icon/fondo_ap.jpg') no-repeat center center fixed;
+  background: url('/assets/icon/fondo_app1.jpg') no-repeat center center fixed;
   background-size: cover;
   position: fixed;
   width: 100%;
@@ -21,7 +21,7 @@ ion-content {
   z-index: -1;
 }
 
-/* Contenedor principal para centrar el card */
+/* centrar el card */
 .login-container {
   display: flex;
   justify-content: center;
@@ -29,12 +29,12 @@ ion-content {
   min-height: 100vh;
 }
 
-/* Card centrado en el contenedor */
+/* centrado en el contenedor */
 .login-card {
   width: 90%;
   max-width: 400px;
   padding: 40px 20px;
-  background-color: #ffffff;
+  background-color: #1a0737;
   border-radius: 16px;
   box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
   text-align: center;
@@ -44,7 +44,7 @@ ion-content {
   align-items: center;
 }
 
-/* Estilos para los elementos dentro del card */
+/* elementos dentro del card */
 .logo-container {
   width: 100%;
   margin-bottom: 40px;
@@ -60,6 +60,11 @@ ion-content {
   width: 100%;
   max-width: 300px;
   margin: 0 auto;
+}
+
+/* Espaciado entre los inputs */
+.input-container ion-item {
+  margin-bottom: 20px; 
 }
 
 .button-container {
@@ -85,10 +90,6 @@ ion-content {
   font-weight: bold;
   letter-spacing: 1px;
   transition: all 0.3s ease;
-
-  &:active {
-    transform: translateY(2px);
-  }
 }
 
 .primary-button {
@@ -97,20 +98,12 @@ ion-content {
   --padding: 12px 24px;
   --font-size: 16px;
   --box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-
-  &:hover {
-    --background: #2A64F7;
-  }
 }
 
 .secondary-button {
   --background: #3880FF;
-  --color: rgb(255, 255, 255);
+  --color: #fff;
   --padding: 12px 24px;
   --font-size: 16px;
   --border: 1px solid #DADADA;
-
-  &:hover {
-    --background: #331396;
-  }
 }

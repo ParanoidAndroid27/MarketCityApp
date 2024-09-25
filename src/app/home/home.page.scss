@@ -1,18 +1,20 @@
-/* Asegúrate de que el fondo cubra toda la aplicación */
+/* fondo cubra toda la aplicación */
 ion-app {
-  height: 100%;
+  height: 100vh;
+  width: 100%;
 }
 
 ion-content {
-  --background: none;
-  background-image: url('/assets/icon/fondo_ap.jpg') !important;
+  background-image: url('/assets/icon/fondo_app1.jpg') !important;
   background-position: center center;
   background-repeat: no-repeat;
   background-size: cover;
   background-attachment: fixed;
+  --background: transparent;
+  height: 100%;
 }
 
-/* Estilos adicionales para mejorar la apariencia */
+
 ion-menu {
   --width: 250px;
 }
@@ -28,11 +30,11 @@ ion-card {
 }
 
 ion-card-header {
-  background-color: #f4f4f4;
+  background-color: #1a0737;
 }
 
 ion-card-title {
-  color: #333;
+  color: #ffffff;
   font-weight: bold;
 }
 
@@ -44,11 +46,15 @@ ion-card-subtitle {
 ion-toolbar {
   --padding-start: 16px;
   --padding-end: 16px;
+  --background: #fff;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
 ion-searchbar {
   --padding-start: 8px;
   --padding-end: 8px;
+  --background: #f4f4f4;
+  --color: #333;
 }
 
 ion-list {
@@ -75,20 +81,6 @@ ion-label {
   line-height: 1.25rem;
 }
 
-ion-content {
-  --background: transparent;
-}
-
-ion-toolbar {
-  --background: #fff;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-}
-
-ion-searchbar {
-  --background: #f4f4f4;
-  --color: #333;
-}
-
 ion-button {
   --background: #3880ff;
   --color: #fff;
@@ -96,8 +88,8 @@ ion-button {
   --padding: 12px 24px;
   --font-size: 16px;
   --box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
 
-  &:hover {
-    --background: #2a64f7;
-  }
+ion-button:hover {
+  --background: #2a64f7;
 }

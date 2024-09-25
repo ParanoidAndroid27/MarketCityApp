@@ -1,168 +1,167 @@
 <ion-app>
-    <ion-menu contentId="main-content" side="end">
-      <ion-header>
-        <ion-toolbar>
-          <ion-title>Menu</ion-title>
-        </ion-toolbar>
-        <ion-toolbar>
-          <ion-searchbar placeholder="Buscar..."></ion-searchbar>
-        </ion-toolbar>
-      </ion-header>
-      <ion-content class="ion-padding">
-        <ion-list>
-          <ion-item>
-            <ion-label>Perfil</ion-label>
-            <ion-badge color="primary">22k</ion-badge>
-          </ion-item>
-          <ion-item>
-            <ion-label>Categorías</ion-label>
-            <ion-badge color="secondary">118k</ion-badge>
-          </ion-item>
-          <ion-item>
-            <ion-label>Guardados</ion-label>
-            <ion-badge color="tertiary">34k</ion-badge>
-          </ion-item>
-          <ion-item>
-            <ion-label>Mis Productos</ion-label>
-            <ion-badge color="success">80</ion-badge>
-          </ion-item>
-          <ion-item>
-            <ion-label>Chats</ion-label>
-            <ion-badge color="warning">70</ion-badge>
-          </ion-item>
-          <ion-item>
-            <ion-label>Notificaciones</ion-label>
-            <ion-badge color="danger">100</ion-badge>
-          </ion-item>
-        </ion-list>
-      </ion-content>
-    </ion-menu>
-  
-    <div class="ion-page" id="main-content">
-      <ion-header>
-        <ion-toolbar>
-          <ion-buttons slot="start">
-            <ion-back-button defaultHref="/"></ion-back-button>
-          </ion-buttons>
-          <ion-title>Productos</ion-title>
-          <ion-buttons slot="end">
-            <ion-menu-button></ion-menu-button>
-          </ion-buttons>
-        </ion-toolbar>
-        <ion-toolbar>
-          <ion-searchbar placeholder="Buscar productos..."></ion-searchbar>
-        </ion-toolbar>
-      </ion-header>
-  
-      <ion-content class="ion-padding">
-        <!-- Tarjeta 1: Notebook -->
-        <ion-card>
-          <ion-card-header>
-            <ion-card-title>Notebook</ion-card-title>
-            <ion-card-subtitle>Tecnología</ion-card-subtitle>
-          </ion-card-header>
-          <ion-card-content>
-            <ion-list>
-              <ion-item>
-                <ion-thumbnail slot="start">
-                  <img alt="Imagen de ejemplo" src="\assets\icon\note1.jpg" />
-                </ion-thumbnail>
-                <ion-label>ASUS Tuf Gaming F15</ion-label>
-              </ion-item>
-              <ion-item>
-                <ion-thumbnail slot="start">
-                  <img alt="Imagen de ejemplo" src="\assets\icon\NOTE2.jpg" />
-                </ion-thumbnail>
-                <ion-label>Acer Nitro 5 8gb ram 1650ti</ion-label>
-              </ion-item>
-              <ion-item>
-                <ion-thumbnail slot="start">
-                  <img alt="Imagen de ejemplo" src="\assets\icon\note3.jpg" />
-                </ion-thumbnail>
-                <ion-label>Lenovo Thinkpad X1 </ion-label>
-              </ion-item>
-              <ion-item lines="none">
-                <ion-thumbnail slot="start">
-                  <img alt="Imagen de ejemplo" src="\assets\icon\notebook3.jpg" />
-                </ion-thumbnail>
-                <ion-label>Hp Probook 4gb de ram para repuesto</ion-label>
-              </ion-item>
-            </ion-list>
-          </ion-card-content>
-        </ion-card>
-  
-        <!--Celulares -->
-        <ion-card>
-          <ion-card-header>
-            <ion-card-title>Celulares</ion-card-title>
-            <ion-card-subtitle>Tecnología</ion-card-subtitle>
-          </ion-card-header>
-          <ion-card-content>
-            <ion-list>
-              <ion-item>
-                <ion-thumbnail slot="start">
-                  <img alt="Imagen de ejemplo" src="\assets\icon\CELU1.jpg" />
-                </ion-thumbnail>
-                <ion-label>Samsung S24 Ultra pantalla trizada</ion-label>
-              </ion-item>
-              <ion-item>
-                <ion-thumbnail slot="start">
-                  <img alt="Imagen de ejemplo" src="\assets\icon\celu2.jpg" />
-                </ion-thumbnail>
-                <ion-label>Iphone 13 128GB 75% de bateria</ion-label>
-              </ion-item>
-              <ion-item>
-                <ion-thumbnail slot="start">
-                  <img alt="Imagen de ejemplo" src="\assets\icon\celu3.png" />
-                </ion-thumbnail>
-                <ion-label>Iphone 11 pro para repuesto</ion-label>
-              </ion-item>
-              <ion-item lines="none">
-                <ion-thumbnail slot="start">
-                  <img alt="Imagen de ejemplo" src="\assets\icon\celu4.jpg" />
-                </ion-thumbnail>
-                <ion-label>Huawei Pura 70 pro Como nuevo</ion-label>
-              </ion-item>
-            </ion-list>
-          </ion-card-content>
-        </ion-card>
-  
-        <!-- Tarjeta 3: Pantalones Hombre -->
-        <ion-card>
-          <ion-card-header>
-            <ion-card-title>SmartWatch</ion-card-title>
-            <ion-card-subtitle>Tecnología</ion-card-subtitle>
-          </ion-card-header>
-          <ion-card-content>
-            <ion-list>
-              <ion-item>
-                <ion-thumbnail slot="start">
-                  <img alt="Imagen de ejemplo" src="src\assets\icon\smart1.jpg" />
-                </ion-thumbnail>
-                <ion-label>Huawei Smart fit 3</ion-label>
-              </ion-item>
-              <ion-item>
-                <ion-thumbnail slot="start">
-                  <img alt="Imagen de ejemplo" src="\assets\icon\watch2.jpg" />
-                </ion-thumbnail>
-                <ion-label>Huawei Watch GT-4 Negro</ion-label>
-              </ion-item>
-              <ion-item>
-                <ion-thumbnail slot="start">
-                  <img alt="Imagen de ejemplo" src="\assets\icon\watch3.jpg" />
-                </ion-thumbnail>
-                <ion-label>Apple Watch Ultra 2</ion-label>
-              </ion-item>
-              <ion-item lines="none">
-                <ion-thumbnail slot="start">
-                  <img alt="Imagen de ejemplo" src="\assets\icon\watch4.png" />
-                </ion-thumbnail>
-                <ion-label>Xioami 2 Lite</ion-label>
-              </ion-item>
-            </ion-list>
-          </ion-card-content>
-        </ion-card>
-      </ion-content>
-    </div>
-  </ion-app>
-  
+  <ion-menu contentId="main-content" side="end">
+    <ion-header>
+      <ion-toolbar>
+        <ion-title>Menu</ion-title>
+      </ion-toolbar>
+      <ion-toolbar>
+        <ion-searchbar placeholder="Buscar..."></ion-searchbar>
+      </ion-toolbar>
+    </ion-header>
+    <ion-content class="ion-padding">
+      <ion-list>
+        <ion-item>
+          <ion-label>Perfil</ion-label>
+          <ion-badge color="primary">22k</ion-badge>
+        </ion-item>
+        <ion-item>
+          <ion-label>Categorías</ion-label>
+          <ion-badge color="secondary">118k</ion-badge>
+        </ion-item>
+        <ion-item>
+          <ion-label>Guardados</ion-label>
+          <ion-badge color="tertiary">34k</ion-badge>
+        </ion-item>
+        <ion-item>
+          <ion-label>Mis Productos</ion-label>
+          <ion-badge color="success">80</ion-badge>
+        </ion-item>
+        <ion-item>
+          <ion-label>Chats</ion-label>
+          <ion-badge color="warning">70</ion-badge>
+        </ion-item>
+        <ion-item>
+          <ion-label>Notificaciones</ion-label>
+          <ion-badge color="danger">100</ion-badge>
+        </ion-item>
+      </ion-list>
+    </ion-content>
+  </ion-menu>
+
+  <div class="ion-page" id="main-content">
+    <ion-header>
+      <ion-toolbar>
+        <ion-buttons slot="start">
+          <ion-back-button defaultHref="/"></ion-back-button>
+        </ion-buttons>
+        <ion-title>Productos</ion-title>
+        <ion-buttons slot="end">
+          <ion-menu-button></ion-menu-button>
+        </ion-buttons>
+      </ion-toolbar>
+      <ion-toolbar>
+        <ion-searchbar placeholder="Buscar productos..."></ion-searchbar>
+      </ion-toolbar>
+    </ion-header>
+
+    <ion-content class="ion-padding">
+      <!-- Notebook -->
+      <ion-card>
+        <ion-card-header>
+          <ion-card-title>Notebook</ion-card-title>
+          <ion-card-subtitle>Tecnología</ion-card-subtitle>
+        </ion-card-header>
+        <ion-card-content>
+          <ion-list>
+            <ion-item>
+              <ion-thumbnail slot="start">
+                <img alt="Imagen de ejemplo" src="/assets/icon/note1.jpg" />
+              </ion-thumbnail>
+              <ion-label>ASUS Tuf Gaming F15</ion-label>
+            </ion-item>
+            <ion-item>
+              <ion-thumbnail slot="start">
+                <img alt="Imagen de ejemplo" src="/assets/icon/NOTE2.jpg" />
+              </ion-thumbnail>
+              <ion-label>Acer Nitro 5 8gb ram 1650ti</ion-label>
+            </ion-item>
+            <ion-item>
+              <ion-thumbnail slot="start">
+                <img alt="Imagen de ejemplo" src="/assets/icon/note3.jpg" />
+              </ion-thumbnail>
+              <ion-label>Lenovo Thinkpad X1 </ion-label>
+            </ion-item>
+            <ion-item lines="none">
+              <ion-thumbnail slot="start">
+                <img alt="Imagen de ejemplo" src="/assets/icon/notebook3.jpg" />
+              </ion-thumbnail>
+              <ion-label>Hp Probook 4gb de ram para repuesto</ion-label>
+            </ion-item>
+          </ion-list>
+        </ion-card-content>
+      </ion-card>
+
+      <!-- Celulares -->
+      <ion-card>
+        <ion-card-header>
+          <ion-card-title>Celulares</ion-card-title>
+          <ion-card-subtitle>Tecnología</ion-card-subtitle>
+        </ion-card-header>
+        <ion-card-content>
+          <ion-list>
+            <ion-item>
+              <ion-thumbnail slot="start">
+                <img alt="Imagen de ejemplo" src="/assets/icon/CELU1.jpg" />
+              </ion-thumbnail>
+              <ion-label>Samsung S24 Ultra pantalla trizada</ion-label>
+            </ion-item>
+            <ion-item>
+              <ion-thumbnail slot="start">
+                <img alt="Imagen de ejemplo" src="/assets/icon/celu2.jpg" />
+              </ion-thumbnail>
+              <ion-label>Iphone 13 128GB 75% de bateria</ion-label>
+            </ion-item>
+            <ion-item>
+              <ion-thumbnail slot="start">
+                <img alt="Imagen de ejemplo" src="/assets/icon/celu3.png" />
+              </ion-thumbnail>
+              <ion-label>Iphone 11 pro para repuesto</ion-label>
+            </ion-item>
+            <ion-item lines="none">
+              <ion-thumbnail slot="start">
+                <img alt="Imagen de ejemplo" src="/assets/icon/celu4.jpg" />
+              </ion-thumbnail>
+              <ion-label>Huawei Pura 70 pro Como nuevo</ion-label>
+            </ion-item>
+          </ion-list>
+        </ion-card-content>
+      </ion-card>
+
+      <!--  SmartWatch -->
+      <ion-card>
+        <ion-card-header>
+          <ion-card-title>SmartWatch</ion-card-title>
+          <ion-card-subtitle>Tecnología</ion-card-subtitle>
+        </ion-card-header>
+        <ion-card-content>
+          <ion-list>
+            <ion-item>
+              <ion-thumbnail slot="start">
+                <img alt="Imagen de ejemplo" src="/assets/icon/smart1.jpg" />
+              </ion-thumbnail>
+              <ion-label>Huawei Smart fit 3</ion-label>
+            </ion-item>
+            <ion-item>
+              <ion-thumbnail slot="start">
+                <img alt="Imagen de ejemplo" src="/assets/icon/watch2.jpg" />
+              </ion-thumbnail>
+              <ion-label>Huawei Watch GT-4 Negro</ion-label>
+            </ion-item>
+            <ion-item>
+              <ion-thumbnail slot="start">
+                <img alt="Imagen de ejemplo" src="/assets/icon/watch3.jpg" />
+              </ion-thumbnail>
+              <ion-label>Apple Watch Ultra 2</ion-label>
+            </ion-item>
+            <ion-item lines="none">
+              <ion-thumbnail slot="start">
+                <img alt="Imagen de ejemplo" src="/assets/icon/watch4.png" />
+              </ion-thumbnail>
+              <ion-label>Xiaomi 2 Lite</ion-label>
+            </ion-item>
+          </ion-list>
+        </ion-card-content>
+      </ion-card>
+    </ion-content>
+  </div>
+</ion-app>
