@@ -1,5 +1,5 @@
 <ion-header>
-  <ion-toolbar>
+  <ion-toolbar color="danger">
     <ion-buttons slot="start">
       <ion-back-button defaultHref="/"></ion-back-button>
     </ion-buttons>
@@ -8,58 +8,69 @@
 </ion-header>
 
 <ion-content class="ion-padding">
-  <form [formGroup]="registroForm" (ngSubmit)="onSubmit()">
-    
-    <!-- Campo nombre -->
-    <ion-item>
-      <ion-label position="floating">Nombre</ion-label>
-      <ion-input formControlName="nombre" required></ion-input>
-    </ion-item>
+  <div class="form-background"></div> 
 
-    <!-- Campo apellidos -->
-    <ion-item>
-      <ion-label position="floating">Apellidos</ion-label>
-      <ion-input formControlName="apellidos" required></ion-input>
-    </ion-item>
+  <div class="form-container"> 
+    <form [formGroup]="registroForm" (ngSubmit)="onSubmit()">
+      <!-- Campo nombre -->
+      <ion-item lines="none" color="light">
+        <ion-icon name="person-outline" slot="start"></ion-icon>
+        <ion-label position="floating">Nombre</ion-label>
+        <ion-input formControlName="nombre" required></ion-input>
+      </ion-item>
 
-    <!-- Campo nombre de usuario -->
-    <ion-item>
-      <ion-label position="floating">Nombre de Usuario</ion-label>
-      <ion-input formControlName="nombreUsuario" required></ion-input>
-    </ion-item>
+      <!-- apellidos -->
+      <ion-item lines="none" color="light">
+        <ion-icon name="people-outline" slot="start"></ion-icon>
+        <ion-label position="floating">Apellidos</ion-label>
+        <ion-input formControlName="apellidos" required></ion-input>
+      </ion-item>
 
-    <!-- Campo correo electrónico -->
-    <ion-item>
-      <ion-label position="floating">Correo Electrónico</ion-label>
-      <ion-input formControlName="correo" type="email" required></ion-input>
-    </ion-item>
+      <!--  nombre de usuario -->
+      <ion-item lines="none" color="light">
+        <ion-icon name="person-circle-outline" slot="start"></ion-icon>
+        <ion-label position="floating">Nombre de Usuario</ion-label>
+        <ion-input formControlName="nombreUsuario" required></ion-input>
+      </ion-item>
 
-    <!-- Campo contraseña -->
-    <ion-item>
-      <ion-label position="floating">Contraseña</ion-label>
-      <ion-input formControlName="contrasena" type="password" required></ion-input>
-    </ion-item>
+      <!--  correo electrónico -->
+      <ion-item lines="none" color="light">
+        <ion-icon name="mail-outline" slot="start"></ion-icon>
+        <ion-label position="floating">Correo Electrónico</ion-label>
+        <ion-input formControlName="correo" type="email" required></ion-input>
+      </ion-item>
 
-    <!-- Campo confirmar contraseña -->
-    <ion-item>
-      <ion-label position="floating">Confirmar Contraseña</ion-label>
-      <ion-input formControlName="confirmarContrasena" type="password" required></ion-input>
-    </ion-item>
+      <!--  contraseña -->
+      <ion-item lines="none" color="light">
+        <ion-icon name="lock-closed-outline" slot="start"></ion-icon>
+        <ion-label position="floating">Contraseña</ion-label>
+        <ion-input formControlName="contrasena" type="password" required></ion-input>
+      </ion-item>
 
-    <!-- Campo foto de perfil -->
-<ion-item>
-  <ion-label position="floating">Foto de Perfil</ion-label>
-  <input type="file" formControlName="fotoPerfil" accept="image/*" (change)="onFileSelected($event)">
-</ion-item>
+      <!-- confirmar contraseña -->
+      <ion-item lines="none" color="light">
+        <ion-icon name="lock-closed-outline" slot="start"></ion-icon>
+        <ion-label position="floating">Confirmar Contraseña</ion-label>
+        <ion-input formControlName="confirmarContrasena" type="password" required></ion-input>
+      </ion-item>
 
+      <!--  foto de perfil -->
+      <ion-item lines="none" color="light">
+        <ion-icon name="camera-outline" slot="start"></ion-icon>
+        <ion-label position="floating"></ion-label>
+        <input type="file" formControlName="fotoPerfil" accept="image/*" (change)="onFileSelected($event)">
+      </ion-item>
 
-    <!-- Checkbox de términos y condiciones -->
-    <ion-item>
-      <ion-label>He leído y acepto los términos y condiciones</ion-label>
-      <ion-checkbox formControlName="aceptarTerminos"></ion-checkbox>
-    </ion-item>
+      <!--  términos y condiciones -->
+      <ion-item lines="none" color="light">
+        <ion-checkbox formControlName="aceptarTerminos"></ion-checkbox>
+        <ion-label>He leído y acepto los términos y condiciones</ion-label>
+      </ion-item>
 
-    <!-- Botón de registro -->
-    <ion-button expand="full" type="submit" [disabled]="!registroForm.valid">Registrar</ion-button>
-  </form>
+      <!-- Botón de registro -->
+      <ion-button expand="full" type="submit" [disabled]="!registroForm.valid">
+        Registrar
+      </ion-button>
+    </form>
+  </div>
 </ion-content>
