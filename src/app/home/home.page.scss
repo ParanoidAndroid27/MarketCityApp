@@ -5,7 +5,7 @@ ion-app {
 
 ion-content {
   --background: none;
-  background-image: url('/assets/icon/fondo_ap.jpg') !important;
+  background-image: url('/assets/icon/fondo_app1.jpg') !important;
   background-position: center center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -28,16 +28,16 @@ ion-card {
 }
 
 ion-card-header {
-  background-color: #f4f4f4;
+  background-color: #7e7e7e;
 }
 
 ion-card-title {
-  color: #333;
+  color: #000000;
   font-weight: bold;
 }
 
 ion-card-subtitle {
-  color: #666;
+  color: #000000;
   font-size: 0.875rem;
 }
 
